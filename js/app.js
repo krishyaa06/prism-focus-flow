@@ -17,7 +17,7 @@
   }
   function draw() {
     const r = remaining(); if (S.endsAt && r <= 0) return finish();
-    $("#time").textContent = Core.fmt(r); $("#prog").style.strokeDashoffset = 603.2 * (r / total());
+    $("#time").textContent = Core.fmt(r); $("#prog").style.strokeDashoffset = 603.2 * (1 - r / total());
     $("#round").textContent = S.phase === "focus" ? `Round ${(S.done % cfg.every) + 1} of ${cfg.every}` : S.phase === "long" ? "Long break" : "Short break";
     $$("#phase button").forEach((b) => b.classList.toggle("on", b.dataset.v === S.phase));
     $("#go").textContent = S.endsAt ? "Pause" : r < total() ? "Resume" : "Start";
