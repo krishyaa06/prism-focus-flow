@@ -1,0 +1,23 @@
+    <section class="grid g2 ff">
+      <div class="card timer" id="timer">
+        <div class="tabs" id="phase"><button class="on" data-v="focus">Focus</button><button data-v="short">Short break</button><button data-v="long">Long break</button></div>
+        <div class="ring"><svg viewBox="0 0 220 220" aria-hidden="true"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--accent-2)"/></linearGradient></defs><circle cx="110" cy="110" r="96" class="trk"/><circle cx="110" cy="110" r="96" class="prog" id="prog"/></svg><div class="t"><b id="time">25:00</b><span id="round">Round 1</span></div></div>
+        <input id="task" class="task" placeholder="What are you working on?" aria-label="Current task" />
+        <div class="row ctrls"><button class="btn primary" id="go">Start</button><button class="btn" id="skip">Skip</button><button class="btn" id="rst">Reset</button></div>
+      </div>
+      <div class="stack">
+        <div class="card">
+          <div class="card-title"><h2>Today</h2><span class="pill" id="streak"></span></div>
+          <div class="grid g3 kp"><div><b id="k-s">0</b><span>sessions</span></div><div><b id="k-m">0</b><span>focus min</span></div><div><b id="k-w">0</b><span>this week</span></div></div>
+          <div class="bars" id="bars"></div>
+        </div>
+        <div class="card">
+          <div class="card-title"><h2>Settings</h2></div>
+          <div class="chips" id="presets"></div>
+          <div class="grid g4 set"><label class="field"><span>Focus</span><input type="number" id="c-focus" min="1" /></label><label class="field"><span>Short</span><input type="number" id="c-short" min="1" /></label><label class="field"><span>Long</span><input type="number" id="c-long" min="1" /></label><label class="field"><span>Long every</span><input type="number" id="c-every" min="1" /></label></div>
+          <label class="check"><input type="checkbox" id="auto" /> Auto-start next phase</label>
+          <label class="check"><input type="checkbox" id="sound" checked /> Sound</label>
+          <div class="top" id="top"></div>
+        </div>
+      </div>
+    </section>

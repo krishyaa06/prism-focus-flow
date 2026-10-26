@@ -1,0 +1,30 @@
+{
+  "name": "prism-focus-flow",
+  "version": "1.0.0",
+  "description": "Pomodoro / deep-work timer with presets, task tracking, weekly chart, streaks, notifications and drift-free timing.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "pomodoro",
+    "productivity",
+    "focus",
+    "timer",
+    "deep-work",
+    "time-tracking",
+    "vibe-coding",
+    "vanilla-js",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-focus-flow.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-focus-flow/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}
